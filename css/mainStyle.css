@@ -1,0 +1,232 @@
+* {
+  font-family: "IBM Plex Mono", monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  scroll-behavior: smooth;
+  scroll-padding: 60px;
+  overflow-x: hidden;
+}
+h1 {
+  font-family: "Lora", serif;
+  font-size: 88px;
+}
+h2 {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 48px;
+  font-weight: 700;
+}
+h4 {
+  font-size: 36px;
+}
+h5 {
+  font-size: 40px;
+  font-weight: 700;
+}
+h6 {
+  font-size: 24px;
+  font-weight: 600;
+}
+h3 {
+  font-size: 24px;
+}
+p {
+  font-size: 20px;
+  font-weight: 400;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.btn {
+  border-radius: 4px;
+  font-weight: 800;
+}
+:root {
+  --primary: #ad974f; /* Change to your desired primary color */
+  --secondary: #d19b28; /* Change to your desired secondary color */
+  --tertiary: #41372e;
+  --success: #28a745; /* Change to your desired success color */
+  --info: #17a2b8; /* Change to your desired info color */
+  --warning: #ffc107; /* Change to your desired warning color */
+  --danger: #dc3545; /* Change to your desired danger color */
+  --light: #eaeaea; /* Change to your desired light color */
+  --dark: #0e0e0e; /* Change to your desired dark color */
+}
+/* Add space between navigation items */
+.navbar-nav:not(.collapsed) .nav-item {
+  margin-right: 2rem; /* You can adjust this value to increase or decrease the space */
+}
+/* Add padding to the navbar for larger screens */
+
+.active {
+  color: var(--primary) !important;
+}
+.nav-link:hover {
+  color: var(--secondary) !important;
+}
+.wrapper-hero {
+  height: 100vh;
+  padding-top: 7px;
+}
+
+.bg-image {
+  position: absolute;
+  width: auto;
+  min-height: 92%;
+  bottom: 0;
+  right: 0;
+}
+.hero-text-wrap {
+  margin-top: 5%;
+}
+.hero-title {
+  background-color: var(--primary);
+  max-width: 430px;
+}
+.hero-title-2 {
+  background-color: var(--tertiary);
+  max-width: 480px;
+  min-height: 100px;
+  position: relative;
+  top: -50px;
+  z-index: -1;
+}
+.hero-body {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.icon-link i {
+  font-size: 28px;
+  color: var(--primary);
+}
+/* Change icon color on hover */
+.icon-link i:hover {
+  color: var(--secondary);
+}
+.social-link i {
+  font-size: 28px;
+  color: var(--light);
+}
+.social-link i:hover {
+  color: var(--secondary);
+}
+.social-link-txt :hover {
+  color: var(--secondary);
+}
+
+.click-resume h3:hover {
+  color: var(--secondary);
+  cursor: pointer;
+}
+.eye-icon {
+  color: var(--light);
+}
+.proj-img {
+  max-width: 65%;
+}
+.gal-img-car{
+  max-height: 50vh;
+  width: 100%;
+  overflow: hidden;
+}
+.gal-img-car img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.proj-img-car{
+  width: 100%; /* Set the width of the div */
+  height: 200px;
+  overflow: hidden;
+}
+.proj-img-car img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card{
+  border-radius: 0 !important;
+  border: 0;
+}
+
+
+/* Track */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+/* Track (background) */
+::-webkit-scrollbar-track {
+  background: var(--tertiary);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px; /* Rounded corners */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}
+
+/* Corner */
+::-webkit-scrollbar-corner {
+  background: var(--light);
+}
+
+@media (max-width: 768px) {
+  .icon-link i {
+    font-size: 24px;
+  }
+  .social-link i {
+    font-size: 24px;
+  }
+  .bg-image {
+    bottom: 0;
+    right: 0;
+    min-height: 92%;
+    width: auto;
+    /* overflow: hidden; */
+    transform: translateX(35%);
+  }
+  .hero-title {
+    max-width: 280px;
+  }
+  .hero-title-2 {
+    max-width: 312px;
+    min-height: 75px;
+    top: -45px;
+  }
+  .hero-body {
+    max-width: 210px;
+  }
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  h5 {
+    font-size: 32px;
+  }
+  p {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .proj-img {
+    max-width: 100%;
+  }
+}
