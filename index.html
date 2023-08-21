@@ -27,7 +27,7 @@
 
 <body class="bg-dark">
   
-  <nav class="navbar position-fixed w-100 navbar-expand-lg navbar-dark bg-dark px-1 px-md-5 " style="z-index: 1000; "
+  <nav class="navbar position-fixed navbar-expand-lg navbar-dark bg-dark px-1 px-md-5 " style="z-index: 1000; width: 100vw; "
     id="navbar-example2">
     <div class="navbar-brand">
       <div class="d-flex align-items-center">
@@ -59,6 +59,8 @@
       </ul>
     </div>
   </nav>
+  
+  
 
   <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-smooth-scroll="true" tabindex="0" >
     <section id="hero">
@@ -111,14 +113,13 @@
         </div>
       </div>
       <div class="row d-none d-md-block" style="width: 100%">
-        <img src="./resources/patterns/Pattern bottom.png" style="height: 10vh; position: relative; top: -10vh; z-index: -1;" />
+        <img src="./resources/patterns/Pattern bottom.png" style="height: 10vh; position: relative; top: -10vh" />
       </div>
     </section>
     <section id="about">
-      <div>
-        <div class="row" style="height: 100%; position: absolute">
-          <img src="./resources/patterns/Pattern right.png" alt="" class="z-n1"
-            style="position: relative; left: 80vw; max-height: inherit" />
+        <div class="row" style="height: inherit; position: absolute">
+          <img src="./resources/patterns/Pattern right.png" alt="" class="z-n1 d-none d-lg-block"
+            style="position: relative; left: 90vw; max-height: inherit" />
         </div>
         <div class="container-fluid" style="padding: 0">
           <div class="row mt-2 ">
