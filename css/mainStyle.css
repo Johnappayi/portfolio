@@ -180,7 +180,38 @@ a{
   background: var(--light);
 }
 
+/* Experience Section Styling */
+#experience ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+#experience li {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+  color: var(--light);
+}
+
+#experience li:hover {
+  color: var(--secondary);
+  transition: color 0.3s ease;
+}
+
+#experience h4:hover {
+  color: var(--secondary);
+  transition: color 0.3s ease;
+}
+
+/* Section spacer used to add breathing room between sections */
+.section-spacer{
+  height: 80px;
+  width: 100%;
+}
+
 @media (max-width: 768px) {
+.section-spacer{
+  height: 40px;
+}
   .icon-link i {
     font-size: 24px;
   }

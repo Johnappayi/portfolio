@@ -1,0 +1,170 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage[dvipsnames]{xcolor}
+
+% --- ATS OPTIMIZATION ---
+% Use standard Times font and font encoding for flawless ATS text extraction
+\usepackage{mathptmx}
+\usepackage[T1]{fontenc}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Balanced layout margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Standardized Section Spacing
+\titleformat{\section}{
+  \nopagebreak\vspace{6pt}\color{BrickRed}\raggedright\large\bfseries
+}{}{0em}{}
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% Fixed custom macros with micro-controlled spacing
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-1pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{1pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{1pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{1pt}\item
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=1.5pt, parsep=0pt, topsep=1pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{center}
+  {\Huge \textbf{John Suresh}} \\ \vspace{10pt}
+  \small
+  +91 6282583886 \quad $|$ \quad
+  \href{mailto:johnsuresh.work@gmail.com}{\underline{johnsuresh.work@gmail.com}} \quad $|$ \quad
+  \href{https://johnappayi.github.io/portfolio/}{\underline{johnappayi.github.io/portfolio}} \quad $|$ \quad
+  \href{http://www.linkedin.com/in/johnsuresh}{\underline{linkedin.com/in/johnsuresh}}
+\end{center}
+
+\vspace{-6pt}
+
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+\small{Software Engineer with 2 years of hands-on experience designing cloud-native backend systems and distributed data processing solutions on Google Cloud Platform. Experienced in Kotlin, Spring Boot, Apache Beam, Dataflow, GraphQL, Docker, Apache Airflow, and CI/CD, with a proven track record of developing scalable enterprise applications and production-grade data pipelines at Equifax.}
+
+% -----------EXPERIENCE-----------
+\section{Work Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Equifax}{Jul 2024 -- Present}
+    {Junior Software Engineer}{Thiruvananthapuram, India}
+    \resumeItemListStart
+      \resumeItem{Designed, developed, and enhanced 10+ distributed Apache Beam pipelines on Google Cloud Dataflow, scaling data processing from 350K+ records in NPE to over 1 Billion+ records in Production.}
+      \resumeItem{Developed and extended Kotlin-based RESTful APIs and GraphQL services using Spring Boot and Netflix DGS, delivering new business capabilities for enterprise microservices.}
+      \resumeItem{Orchestrated multi-stage data processing workflows using Google Cloud Composer (Apache Airflow) to automate complex enterprise data pipelines.}
+      \resumeItem{Built and maintained containerized microservices using Docker and Google Artifact Registry, supporting standardized deployments across environments.}
+      \resumeItem{Enhanced CI/CD workflows using Jenkins, GitHub Actions, and Argo CD by modifying deployment pipelines and GitHub workflows for new services and features.}
+      \resumeItem{Created operational dashboards in Data Studio to monitor transaction status and business metrics.}
+      \resumeItem{Collaborated with cross-functional teams to design, implement, and deliver backend features while following Agile development practices.}
+      \resumeItem{Co-developed a LangGraph-based RAG assistant that indexed Confluence documentation, reducing technical data retrieval times by 25\% and accelerating onboarding for new team members.}
+      \resumeItem{Helped build three internal platform agents using the Google ADK to automate release configuration updates and programmatically generate PRs, streamlining the team's deployment workflow.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {APJ Abdul Kalam Technological University}{Jun 2024}
+    {Bachelor of Technology in Computer Science (Marian Engineering College)}{CGPA: 9.23 / 10}
+\resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+\resumeSubHeadingListStart
+  \vspace{1pt}
+  \item{\small{\textbf{Google Cloud Certified:} Associate Cloud Engineer (ACE)}}
+\resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=2pt, parsep=0pt]
+  \item{
+   \textbf{Languages}{: Kotlin, Java, Python, SQL, C++, JavaScript, PHP, HTML/CSS} \\
+   \textbf{Backend}{: Spring Boot, REST APIs, GraphQL (Netflix DGS), Microservices} \\
+   \textbf{Data Engineering}{: Apache Beam, Google Cloud Dataflow, Apache Airflow (Composer)} \\
+   \textbf{Cloud}{: Google Cloud Platform, Pub/Sub, BigQuery, Cloud Storage, Artifact Registry, Google Agent Platform, Data Studio} \\
+   \textbf{Databases}{: Google Cloud Spanner, Firestore} \\
+   \textbf{DevOps}{: Docker, Jenkins, GitHub Actions, Argo CD, Gradle, Git} \\
+   \textbf{AI}{: LangGraph, Google Agent Development Kit (ADK), Retrieval-Augmented Generation (RAG)}
+  }
+\end{itemize}
+
+%-----------ACADEMIC PROJECTS & INVOLVEMENT-----------
+\section{Academic Projects \& Involvement}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {\textbf{Motodealz} $|$ \emph{Flutter, Mobile Development}}{Apr 2024}
+    \resumeItemListStart
+      \resumeItem{Built a cross-platform mobile application for peer-to-peer used vehicle trading, featuring ID and document verification layouts.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Construction Management System} $|$ \emph{Bootstrap, PHP, JavaScript, HTML/CSS}}{Jun 2023}
+    \resumeItemListStart
+      \resumeItem{Collaborated in a 4-person team to implement a web application featuring secure manager/employee sessions and custom GUI layouts designed in Figma.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Campus Leadership \& Engagement}}{2021 -- 2024}
+    \resumeItemListStart
+      \resumeItem{Served as Class Representative, Core Member at Computer Society of India (MEC), and Media Team Co-Lead at TinkerHub (MEC) to organize technical community events.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\end{document}
