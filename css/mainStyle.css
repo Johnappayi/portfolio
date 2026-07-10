@@ -208,10 +208,41 @@ a{
   width: 100%;
 }
 
-@media (max-width: 768px) {
-.section-spacer{
-  height: 40px;
+/* Experience location spacing */
+#experience .location{
+  font-size: 16px;
+  margin-bottom: 2.2rem; /* increased spacing for desktop */
 }
+
+@media (max-width: 768px) {
+  .section-spacer{
+    height: 40px;
+  }
+
+  /* Mobile: ensure experience bullets have right padding matching the left */
+  #experience .column {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+  }
+
+  #experience .column ul {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Tweak rows inside experience column so Bootstrap margin utilities don't create uneven spacing */
+  #experience .column .row.ms-3,
+  #experience .column .row.ms-2 {
+    margin-left: 0.5rem !important;
+    margin-right: 0.5rem !important;
+  }
+
+  /* Increase spacing after location in mobile view */
+  #experience .location{
+    margin-bottom: 1.8rem; /* increased spacing for mobile */
+  }
+
   .icon-link i {
     font-size: 24px;
   }
